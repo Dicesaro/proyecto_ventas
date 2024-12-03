@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   background-color: #f9f9f9;
+   margin: 0;
+   padding: 20px;
+}
+
+h1 {
+   text-align: center;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+/* Estilo para la tabla de clientes */
+.clientes-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px auto;
+   background-color: #fff;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clientes-table th,
+.clientes-table td {
+   padding: 12px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+.clientes-table th {
+   background-color: #007bff;
+   color: white;
+   text-transform: uppercase;
+}
+
+.clientes-table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+.clientes-table tr:hover {
+   background-color: #f1f1f1;
+}
+
+/* Estilos para botones */
+.btn {
+   display: inline-block;
+   padding: 8px 12px;
+   margin: 0 5px;
+   text-decoration: none;
+   border-radius: 4px;
+   font-size: 14px;
+   text-align: center;
+}
+
+.btn-show {
+   background-color: #007bff;
+   color: white;
+}
+
+.btn-edit {
+   background-color: #28a745;
+   color: white;
+}
+
+.btn-delete {
+   background-color: #dc3545;
+   color: white;
+}
+
+.btn-new {
+   display: block;
+   width: fit-content;
+   margin: 20px auto;
+   background-color: #17a2b8;
+   color: white;
+}
+
+.btn:hover {
+   opacity: 0.9;
+}
+
+/* Estilo para mensajes */
+p {
+   text-align: center;
+   font-size: 16px;
+}
+
+p[style*="color: green"] {
+   color: #28a745;
+   font-weight: bold;
+}

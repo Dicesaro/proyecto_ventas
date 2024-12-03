@@ -1,0 +1,32 @@
+<%= form_with(model: factura) do |form| %>
+  <% if factura.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(factura.errors.count, "error") %> prohibited this factura from being saved:</h2>
+
+      <ul>
+        <% factura.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :pedido_id, "Selecciona un Pedido", style: "display: block" %>
+    <%= form.collection_select :pedido_id, Pedido.all, :id, ->(pedido) { "Pedido ##{pedido.id} - #{pedido.created_at.strftime('%d/%m/%Y')}" }, prompt: "Selecciona un pedido", style: "width: 100%" %>
+  </div>
+
+  <div>
+    <%= form.label :monto, style: "display: block" %>
+    <%= form.text_field :monto %>
+  </div>
+
+  <div>
+    <%= form.label :fecha_pago, style: "display: block" %>
+    <%= form.datetime_field :fecha_pago %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

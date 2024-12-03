@@ -1,0 +1,65 @@
+/* General */
+#pedidos-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+   font-size: 1em;
+   text-align: left;
+}
+
+#pedidos-table thead tr {
+   background-color: #009879;
+   color: #ffffff;
+   text-align: left;
+   font-weight: bold;
+}
+
+#pedidos-table th,
+#pedidos-table td {
+   padding: 12px 15px;
+   border: 1px solid #dddddd;
+}
+
+#pedidos-table tbody tr {
+   border-bottom: 1px solid #dddddd;
+}
+
+#pedidos-table tbody tr:nth-of-type(even) {
+   background-color: #f3f3f3;
+}
+
+#pedidos-table tbody tr:last-of-type {
+   border-bottom: 2px solid #009879;
+}
+
+/* Botones */
+.btn {
+   padding: 8px 12px;
+   text-decoration: none;
+   border-radius: 4px;
+   font-size: 0.9em;
+   color: #ffffff;
+   margin-right: 5px;
+}
+
+.btn:hover {
+   opacity: 0.9;
+}
+
+.btn-view {
+   background-color: #4caf50;
+}
+
+.btn-edit {
+   background-color: #ffc107;
+}
+
+.btn-delete {
+   background-color: #f44336;
+}
+
+.btn-new {
+   background-color: #009879;
+   margin-top: 15px;
+   display: inline-block;
+}
